@@ -67,14 +67,27 @@
             <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           </section>
           <section> 
-            <button>Поиск гостиницы в Седоне</button>
-            <img src="calendar.svg" width="21" height="23" alt="Дата заезда">
-            <img src="calendar-1.svg" width="21" height="23" alt="Дата выезда">
-            <img src="Rectangle.svg" width="12" height="3" alt="Убавить">
-            <img src="Union.svg" width="11" height="11" alt="Добавить">
-            <img src="Rectangle.svg" width="12" height="3" alt="Убавить">
-            <img src="Union.svg" width="11" height="11" alt="Добавить">
-          </section>
+            <fieldset>
+              <legend>Поиск гостиницы в Седоне</legend>
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <label for="zaezd_date">Дата заезда:</label>
+                <input id="zaezd_date" type="date" name="data_zaezda">
+                     <img src="calendar.svg" width="21" height="23" alt="Дата заезда"><br> 
+                     <label for="viezd_date">Дата выезда:</label>
+                <input id="viezd_date" type="date" name="data_viezda">
+                <img src="calendar-1.svg" width="21" height="23" alt="Дата выезда"><br>
+                <label for="amount">Взрослые:</label>
+                <img src="Rectangle.svg" width="12" height="3" alt="Убавить">
+                  <input type="number" name="amount" id="amount" min="1" placeholder="2">
+                  <img src="Union.svg" width="11" height="11" alt="Добавить">
+                  <label for="amount">Дети:</label>
+                  <img src="Rectangle.svg" width="12" height="3" alt="Убавить">
+                  <input type="number" name="amount" id="amount" min="0" placeholder="0">             
+                  <img src="Union.svg" width="11" height="11" alt="Добавить"><br>
+                <input type="submit" value="Найти"></button>
+          </form>
+        </fieldset>
+        </section>
            </main>        
 <footer>
 		<p><b>#visitsedona<br>тел:+7(495)666-02-66</b></p>
