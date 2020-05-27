@@ -20,24 +20,33 @@
   </header>
   <main>
   	<form action="https://echo.htmlacademy.ru" method="get" oninput="priceoutput.value=price.value">
-  		<p>Инфраструктура:</p>
+  		<h3>Инфраструктура:</h3>
   		<label for="pool">Бассейн</label>
   		<input type="checkbox" name="pool" checked>
   		<label for="parking">Парковка</label>
   		<input type="checkbox" name="parking">
   		<label for="wi_fi">WI-FI</label>
   		<input type="checkbox" name="wi_fi">
-  		<p>Тип жилья:</p>
+  		<h3>Тип жилья:</h3>
   		<label for="hotel">Гостиница</label>
   		<input type="checkbox" name="hotel" checked>
   		<label for="motel">Мотель</label>
   		<input type="checkbox" name="motel" checked>
   		<label for="apartments">Апартаменты</label>
   		<input type="checkbox" name="apartments" checked>
-  		<p>Стоимость в сутки:</p>
+  		<h3>Стоимость в сутки:</h3>
   		от 0 <input type="range" name="price" id="price" min="0" max="5000" step="100"> до 5000
-  		<output name="priceoutput"></output><br>
+  		<output name="priceoutput"></output>
   		<input type="submit" value="Показать">
+  		<p>Найдено:</p>
+  		<label for="sorting">Сортировка:</label>
+  		<ul name="sorting">
+  			<li>По цене</li>
+  			<li>По типу</li>
+  			<li>По рейтингу</li>
+  		</ul>
+  		<button>По возрастанию<img src="icon-up-dir.svg" width="11" height="10"></button>
+  		<button>По убыванию<img src="icon-down-dir.svg" width="11" height="10"></button>
   	</form>
   		<section>
   		<img src="Amara.jpg" width="135" height="90" alt="Гостиница Amara Resort&SPA">
