@@ -39,15 +39,22 @@
   		<output name="priceoutput"></output>
   		<input type="submit" value="Показать">
   		<p>Найдено:</p>
-  		<label for="sorting">Сортировка:</label>
-  		<ul name="sorting">
-  			<li>По цене</li>
-  			<li>По типу</li>
-  			<li>По рейтингу</li>
-  		</ul>
-  		<button>По возрастанию<img src="icon-up-dir.svg" width="11" height="10"></button>
-  		<button>По убыванию<img src="icon-down-dir.svg" width="11" height="10"></button>
-  	</form>
+  		<h2>Сортировка</h2>
+  		<section>
+  		  <label for="at-price">По цене</label>
+  		  <input type="radio" name="at-price" value="По цене">
+  		  <label for="by-type">По типу</label>
+  		  <input type="radio" name="by-type" value="По типу">
+  		  <label for="by-rating">По рейтингу</label>
+  		  <input type="radio" name="by-rating" value="По рейтингу">
+  	    </section>
+  	    <section>
+  		  <input type="radio" name="ascending" value="По возрастанию">
+  		  <img src="icon-up-dir.svg" width="11" height="10" alt="По возрастанию">
+  		  <input type="radio" name="descending" value="По убыванию">
+  		  <img src="icon-down-dir.svg" width="11" height="10" alt="По убыванию">
+  	    </section>
+ 	</form>
   		<section>
   		<img src="Amara.jpg" width="135" height="90" alt="Гостиница Amara Resort&SPA">
   	  	<h3>Amara Resort & SPA</h3>
