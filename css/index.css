@@ -1,0 +1,231 @@
+:root {
+	--basic-white: #FFFFFF;
+	--basic-blue: #81B3D2;
+	--basic-extra-light-blue: #EBEBEB
+	--basic-light-blue: #F2F2F2;
+	--basic-dark-blue: #669EC0;
+	--basic-extra-blue: #5496BD;
+	--basic-black: #000000;
+	--basic-light-gray: #766357;
+	--basic-gray: #333333;
+	--basic-dark-gray: #604E43;
+	--basic-extra-gray: #503E33;
+}
+
+body {
+	min-width: 1280px;
+	margin: 0;
+	padding: 0;
+	font-family: "PT-Sans";
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 400;
+	color: var(--basic-gray);
+	text-transform: uppercase;
+	background-color: var(--basic-white);
+	background-image:
+		url("C:\Users\32112\Desktop\1459841-sedona-28\img\background photo.png"),
+		url("C:\Users\32112\Desktop\1459841-sedona-28\img\background photo-1.png"),
+		url("C:\Users\32112\Desktop\1459841-sedona-28\img\welcome.png");
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Header */
+
+.main-navigation {
+	font-size: 14px;
+	line-height: 26px;
+	color: var(--basic-black);
+	background-color: transparent;
+} 
+
+.main-navigation-wrapper {
+	background-color: var(--basic-white);
+}
+
+.site-navigation {
+	list-style: none;
+}
+
+.site-navigation-current a:not([href]) {
+	background-color: var(--basic-white);
+}
+
+.site-navigation a{
+	color: var(--basic-black);
+}
+
+.description1 {
+	font-size: 21px;
+	font-style: bold;
+	text-align: center;
+	line-height: 26px;
+	color: var(--basic-black);
+}
+
+.description2 {
+	text-align: center;
+	line-height: 26px;
+}
+
+.description3 {
+	font-size: 30px;
+	font-style: bold;
+	text-align: center;
+	line-height: 24px;
+	color: var(--basic-black);
+}
+
+/* Footer */
+
+.main-footer {
+	color: var(--basic-black);
+	background-color: var(--basic-white);
+	font: inherit;
+}
+.visually-hidden {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+}
+
+.footer-social {
+	text-align: center;
+}
+
+.footer-social ul {
+	list-style: none;
+}
+
+.main-footer a {
+	color: var(--basic-black);
+	text-decoration: none;
+}
+
+/* Modal */
+
+fieldset {
+	border: none;
+}
+
+.modal {
+	color: var(--basic-black);
+	background-color: var(--basic-white);
+}
+
+.modal h2 {
+	width: 568px;
+	height: 86px;
+	padding-top: 60px;
+	background-color: var(--basic-light-gray);
+	color: var(--basic-white);
+	text-align: center;
+	font-style: bold;
+	font--size: 21px;
+	line-height: 26px;
+}
+
+.modal h2:hover,
+.modal h2:focus {
+	background-color: var(--basic-dark-gray);
+}
+
+.modal h2:active {
+	background-color: var(--basic-extra-gray);
+}
+
+button {
+	font: inherit;
+	color: var(--basic-white);
+	text-align: center;
+	vertical-align: middle;
+	text-transform: uppercase;
+	background-color: var(--basic-blue);
+	border: none;
+}
+
+.button-search {
+	width: 458px;
+	height: 58px;
+	padding: 16px;
+	margin: 30px;
+}
+
+.button-search:hover,
+.button-search:focus {
+	background-color: var(--basic-dark-blue);
+}
+
+.button-search:active {
+	background-color: var(--basic-extra-blue);
+	border: none;
+}
+
+.modal input {
+   	background-color: var(--basic-light-blue);
+}
+
+.modal input:hover {
+	background-color: var(--basic-extra-light-blue);
+}
+
+.modal input:focus {
+	background-color: var(--basic-white);
+}
+
+.calendar-icon {
+	background-image: url("C:\Users\32112\Desktop\1459841-sedona-28\img\calendar-1.svg");
+	background-position: 326px center;
+	background-repeat: no-repeat;
+}
+
+.calendar-icon:hover {
+	background-image: url("C:\Users\32112\Desktop\1459841-sedona-28\img\calendar-2.svg");
+	background-position: 326px center;
+	background-repeat: no-repeat;
+}
+
+.calendar-icon:active {
+background-image: url("C:\Users\32112\Desktop\1459841-sedona-28\img\calendar-3.svg");
+	background-position: 326px center;
+	background-repeat: no-repeat;
+}
+
+.amount-icon {
+	background-image: url("C:\Users\32112\Desktop\1459841-sedona-28\img\Rectangle.svg");
+	background-position: 19px center,
+	background-repeat: no-repeat;
+	background-image: url("C:\Users\32112\Desktop\1459841-sedona-28\img\Union.svg");
+	background-position: 95px center,
+	background-repeat: no-repeat;
+}
+
+.amount-icon:hover {
+	background-image: url("C:\Users\32112\Desktop\1459841-sedona-28\img\Rectangle1.svg"),
+	background-position: 19px center,
+	background-repeat: no-repeat;
+	background-image: url("C:\Users\32112\Desktop\1459841-sedona-28\img\Union1.svg");
+	background-position: 95px center,
+	background-repeat: no-repeat;
+}
+
+.amount-icon:active {
+	background-image: url("C:\Users\32112\Desktop\1459841-sedona-28\img\Rectangle2.svg"),
+	background-position: 19px center,
+	background-repeat: no-repeat;
+	background-image: url("C:\Users\32112\Desktop\1459841-sedona-28\img\Union2.svg");
+	background-position: 95px center,
+	background-repeat: no-repeat;
+}

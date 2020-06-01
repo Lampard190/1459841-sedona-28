@@ -1,0 +1,214 @@
+:root {
+	--basic-white: #FFFFFF;
+	--basic-blue: #81B3D2;
+	--basic-extra-light-blue: #EBEBEB
+	--basic-light-blue: #F2F2F2;
+	--basic-dark-blue: #669EC0;
+	--basic-extra-blue: #5496BD;
+	--basic-black: #000000;
+	--basic-light-gray: #766357;
+	--basic-gray: #333333;
+	--basic-dark-gray: #604E43;
+	--basic-extra-gray: #503E33;
+}
+
+body {
+	min-width: 1280px;
+	margin: 0;
+	padding: 0;
+	font-family: "PT-Sans";
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 400;
+	color: var(--basic-gray);
+	text-transform: uppercase;
+	background-color: var(--basic-white);
+	background-image: url("C:\Users\32112\Desktop\1459841-sedona-28\img\background_inner.png");
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* Header */
+
+.main-navigation {
+	font-size: 14px;
+	line-height: 26px;
+	color: var(--basic-black);
+	background-color: transparent;
+} 
+
+.main-navigation-wrapper {
+	background-color: var(--basic-white);
+}
+
+.site-navigation {
+	list-style: none;
+}
+.site-navigation-current a:not([href]) {
+	background-color: var(--basic-white);
+}
+
+.site-navigation a{
+	color: var(--basic-black);
+
+
+/* Main*/
+
+fieldset {
+	border: none;
+}
+
+.visually-hidden {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+}
+
+.price {
+	color: var(--basic-blue);
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.type {
+	color: var(--basic-black);
+	font-size: 12px;
+	line-height: 18px;
+	text-decoration: underline;
+	text-decoration-color: var(--basic-blue);
+	text-decoration-style: dotted;
+}
+
+.type:hover {
+	color: var(----basic-blue);
+	font-size: 12px;
+	line-height: 18px;
+	text-decoration: underline;
+	text-decoration-color: var(--basic-blue);
+	text-decoration-style: dotted;
+}
+
+.type:active {
+	color: var(----basic-black);
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.rating {
+	color: var(--basic-black);
+	font-size: 12px;
+	line-height: 18px;
+	text-decoration: underline;
+	text-decoration-color: var(--basic-blue);
+	text-decoration-style: dotted;
+}
+
+.rating:hover {
+	color: var(----basic-blue);
+	font-size: 12px;
+	line-height: 18px;
+	text-decoration: underline;
+	text-decoration-color: var(--basic-blue);
+	text-decoration-style: dotted;
+}
+
+.rating:active {
+	color: var(----basic-black);
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.button {
+	font: inherit;
+	color: var(--basic-white);
+	text-align: center;
+	vertical-align: middle;
+	text-transform: uppercase;
+	background-color: var(--basic-blue);
+	border: none;
+}
+
+.bottons-detail {
+	width: 77px;
+	height: 21px;
+	padding: 3px;
+	margin: 19px;
+}
+
+.bottons-detail:hover {
+	background-color: var(--basic-dark-blue);
+}
+
+.bottons-detail:active {
+		background-color: var(--basic-extra-blue);
+}
+
+.bottons-reservation {
+	width: 109px;
+	height: 21px;
+	padding: 3px;
+	margin: 19px;
+	background-color: var(--basic-light-gray)!important;
+}
+
+.bottons-reservation:hover {
+		background-color: var(--basic-dark-gray);
+}
+
+.bottons-reservation:active {
+		background-color: var(--basic-extra-gray);
+}
+
+.description1 {
+	font-size: 21px;
+	font-style: bold;
+	text-align: center;
+	line-height: 26px;
+	color: var(--basic-black);
+}
+
+.icon-up-dir {
+	background-image: url("C:\Users\32112\Desktop\1459841-sedona-28\img\icon-up-dir.svg");
+	background-position: 704px center;
+	background-repeat: no-repeat;
+}
+
+.icon-up-dir {
+	background-image: url("C:\Users\32112\Desktop\1459841-sedona-28\img\icon-down-dir.svg");
+	background-position: 727px center;
+	background-repeat: no-repeat;
+}
+
+/* Footer */
+
+.main-footer {
+	color: var(--basic-black);
+	background-color: var(--basic-white);
+	font: inherit;
+}
+.visually-hidden {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+}
+
+.footer-social {
+	text-align: center;
+}
+
+.footer-social ul {
+	list-style: none;
+}
+
+.main-footer a {
+	color: var(--basic-black);
+	text-decoration: none;
+}
