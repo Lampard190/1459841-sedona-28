@@ -41,10 +41,6 @@ a {
 	background-color: transparent;
 } 
 
-.main-navigation-wrapper {
-	background-color: var(--basic-white);
-}
-
 .site-navigation {
 	list-style: none;
 }
@@ -134,22 +130,22 @@ fieldset {
 	border: none;
 }
 
-.bottons-detail {
+.button-detail {
 	width: 77px;
 	height: 21px;
 	padding: 3px;
 	margin: 19px;
 }
 
-.bottons-detail:hover {
+.button-detail:hover {
 	background-color: var(--basic-dark-blue);
 }
 
-.bottons-detail:active {
+.button-detail:active {
 		background-color: var(--basic-extra-blue);
 }
 
-.bottons-reservation {
+.button-reservation {
 	width: 109px;
 	height: 21px;
 	padding: 3px;
@@ -157,11 +153,11 @@ fieldset {
 	background-color: var(--basic-light-gray)!important;
 }
 
-.bottons-reservation:hover {
+.button-reservation:hover {
 		background-color: var(--basic-dark-gray);
 }
 
-.bottons-reservation:active {
+.button-reservation:active {
 		background-color: var(--basic-extra-gray);
 }
 
