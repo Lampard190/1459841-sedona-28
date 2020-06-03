@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2? family = PT + Sans: wght @ 400; 700 & display = swap">
     <link href="normalize.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
   </head>
   <body>
   <header class="main-header">
@@ -13,8 +13,7 @@
     <img src="logo.svg" width="138" height="70" alt="Логотип Седона">
   </a>
      <nav class=main-navigation>
-      <div class="main-navigation-wrapper">
-  	   <ul class="site-navigation">
+       <ul class="site-navigation">
   		  <li><a href="blank.html">ИНФОРМАЦИЯ</a></li>
   		  <li><a href="blank.html">ФОТО И ВИДЕО</a></li>
   		  <li><a href="map.html">КАРТА ШТАТА</a></li>
@@ -23,53 +22,66 @@
       </div>
     </nav>	
   </header>
-  <main>
-         <p class="description1">Седона - небольшой городок в Аризоне,<br>заслуживающий большего!</p>
-  		<p class="description2">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+  <main class="advantages">
+         <p class="main-title">Седона - небольшой городок в Аризоне,<br>заслуживающий большего!</p>
+  		<p class="main-descr">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       <section>
+        <div class="reason">
             <h2>Настоящий городок</h2>
             <span>&mdash;&numero; 1 &mdash;</span>
             <p>Седона - не аттракцион для туристов,<br>там течёт своя жизнь</p>
+        </div>
             <img src="Настоящий городок.jpg" width="800" height="256" alt="Настоящий городок">
             <ul>
               <li>
-                <p><b>Жильё</b></p>
-                <p>Рекомендуем пожить в настоящем<br>мотеле, всё как в кино!</p>
+                <img src="жилье.svg" width="75" height="72" alt="Жилье">
+                <p class="reason-item"><b>Жильё</b></p>
+                <p class="reason-item-decr">Рекомендуем пожить в настоящем<br>мотеле, всё как в кино!</p>
                </li>
                <li>
-                <p><b>Еда</b></p>
-                <p>Всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!</p>
+                <img src="Еда.svg" width="75" height="70" alt="Еда">
+                <p class="reason-item"><b>Еда</b></p>
+                <p class="reason-item-decr">Всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!</p>
                </li>
                <li>
-                 <p><b>Сувениры</b></p>
-                 <p>Не только китайского, но и местного,<br>производства</p>
+                 <img src="Сувениры.svg" width="64" height="77" alt="Сувениры">
+                 <p class="reason-item"><b>Сувениры</b></p>
+                 <p class="reason-item-decr">Не только китайского, но и местного,<br>производства</p>
                </li> 
             </ul>
         </section>
         <section>
-            <img src="Мост дьявола.jpg" width="800" height="256" alt="Мост дьявола">
+           <img src="Мост дьявола.jpg" width="800" height="256" alt="Мост дьявола">
+           <div class="reason">
             <h2>Там есть мост дьявола</h2>
             <span>&mdash;&numero; 2 &mdash;</span>
             <p>Да, по нему можно пройти! Если конечно<br>вы осмелитесь</p>
+          </div>
           </section>
           <section>
+            <div class="reason1">
             <h2>Небольшая площадь</h2>
             <span>&mdash;&numero; 3 &mdash;</span>
             <p>Все достопримечательности<br>находятся очень близко</p>
+          </div>
           </section>
           <section>
+            <div class="reason1">
             <h2>Красивая дорога</h2>
             <span>&mdash;&numero; 4 &mdash;</span>
             <p>Ехать в Седону из Лас-Вегаса совсем<br>не скучно</p>
+          </div>
           </section>
           <section>
+            <div class="reason1">
             <h2>Мало туристов</h2>
             <span>&mdash;&numero; 5 &mdash;</span>
             <p>Большинство едет в Гранд Каньон<br>и толпится там</p>
+          </div>
           </section>
           <section>
-            <h2 class="description3">Заинтересовались?</h2>
-            <p class="description2">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <h2 class="question-title">Заинтересовались?</h2>
+            <p class="question-descr">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           </section>
           <section> 
               <form action="https://echo.htmlacademy.ru" method="post">

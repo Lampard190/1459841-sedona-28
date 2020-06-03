@@ -23,6 +23,7 @@
   </header>
   <main>
   	<form action="https://echo.htmlacademy.ru" method="get" oninput="priceoutput.value=price.value">
+  		<div class="choosing-hotel">
   		<h3>Инфраструктура:</h3>
   		<label for="pool">Бассейн</label>
   		<input type="checkbox" name="pool" checked>
@@ -40,7 +41,8 @@
   		<h3>Стоимость в сутки:</h3>
   		от 0 <input type="range" name="price" id="price" min="0" max="5000" step="100"> до 5000
   		<output name="priceoutput"></output>
-  		<input type="submit" value="Показать">
+  		<input class="button button-show" type="submit" value="Показать">
+  		</div>
   		<p>Найдено:</p>
   		<h2>Сортировка</h2>
   		<fieldset class="sorting">
