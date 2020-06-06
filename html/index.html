@@ -5,14 +5,14 @@
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2? family = PT + Sans: wght @ 400; 700 & display = swap">
     <link href="normalize.css" rel="stylesheet">
-    <link href="index.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
   </head>
   <body>
   <header class="main-header">
   <a>
     <img src="logo.svg" width="138" height="70" alt="Логотип Седона">
   </a>
-     <nav class=main-navigation>
+     <nav>
        <ul class="site-navigation">
   		  <li><a href="blank.html">ИНФОРМАЦИЯ</a></li>
   		  <li><a href="blank.html">ФОТО И ВИДЕО</a></li>
@@ -35,49 +35,43 @@
             <ul>
               <li>
                 <img src="жилье.svg" width="75" height="72" alt="Жилье">
-                <p class="reason-item"><b>Жильё</b></p>
-                <p class="reason-item-decr">Рекомендуем пожить в настоящем<br>мотеле, всё как в кино!</p>
+                <p><b>Жильё</b></p>
+                <p class="reason-item-descr">Рекомендуем пожить в настоящем<br>мотеле, всё как в кино!</p>
                </li>
                <li>
                 <img src="Еда.svg" width="75" height="70" alt="Еда">
-                <p class="reason-item"><b>Еда</b></p>
-                <p class="reason-item-decr">Всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!</p>
+                <p><b>Еда</b></p>
+                <p class="reason-item-descr">Всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!</p>
                </li>
                <li>
                  <img src="Сувениры.svg" width="64" height="77" alt="Сувениры">
-                 <p class="reason-item"><b>Сувениры</b></p>
-                 <p class="reason-item-decr">Не только китайского, но и местного,<br>производства</p>
+                 <p><b>Сувениры</b></p>
+                 <p class="reason-item-descr">Не только китайского, но и местного,<br>производства</p>
                </li> 
             </ul>
         </section>
         <section>
            <img src="Мост дьявола.jpg" width="800" height="256" alt="Мост дьявола">
-           <div class="reason">
+           <div class="first-reason">
             <h2>Там есть мост дьявола</h2>
             <span>&mdash;&numero; 2 &mdash;</span>
             <p>Да, по нему можно пройти! Если конечно<br>вы осмелитесь</p>
           </div>
           </section>
-          <section>
-            <div class="reason1">
+          <section class="more-reason">
             <h2>Небольшая площадь</h2>
             <span>&mdash;&numero; 3 &mdash;</span>
             <p>Все достопримечательности<br>находятся очень близко</p>
-          </div>
           </section>
-          <section>
-            <div class="reason1">
+          <section class="more-reason">
             <h2>Красивая дорога</h2>
             <span>&mdash;&numero; 4 &mdash;</span>
             <p>Ехать в Седону из Лас-Вегаса совсем<br>не скучно</p>
-          </div>
           </section>
-          <section>
-            <div class="reason1">
+          <section class="more-reason">
             <h2>Мало туристов</h2>
             <span>&mdash;&numero; 5 &mdash;</span>
             <p>Большинство едет в Гранд Каньон<br>и толпится там</p>
-          </div>
           </section>
           <section>
             <h2 class="question-title">Заинтересовались?</h2>
@@ -101,31 +95,21 @@
           </section>
         </main>        
 <footer class="main-footer">
-		<p>#visitsedona<br>тел:+7(495)666-02-66</p>
+	<p>#visitsedona<br>тел:+7(495)666-02-66</p>
     <section class="footer-social">
-		<ul> 
-			<li><a class="social-button" href="#">
-        <span class="visually-hidden">Твиттер</span>
-          <img src="twitter.svg" width="46" height="48" alt="Твиттер">
-          </a>
-      </li>
-			<li>
-        <a class="social-button" href="#">
-          <span class="visually-hidden">Фейсбук</span>
-          <img src="facebook.svg" width="46" height="48" alt="Фейсбук">
+		<a class="social-button" href="#">Твиттер
+           <img src="twitter.svg" width="46" height="48" alt="Твиттер">
         </a>
-      </li>
-			<li>
-        <a class="social-button" href="#">
-          <span class="visually-hidden">Ютьюб</span>
-          <img src="youtube.svg" width="46" height="48" alt="Ютьюб">
+      	<a class="social-button" href="#">Фейсбук
+           <img src="facebook.svg" width="46" height="48" alt="Фейсбук">
         </a>
-      </li>
-		</ul>
-  </section>
+        <a class="social-button" href="#">Ютьюб
+           <img src="youtube.svg" width="46" height="48" alt="Ютьюб">
+       	</a>
+    </section>
 		<a href="https://htmlacademy.ru/study">website by
       <img src="logo-htmlacademy.svg" width="115" height="41" alt="htmlacademy">
     </a>	
-	</footer>
-  </body>
+</footer>
+</body>
 </html>
