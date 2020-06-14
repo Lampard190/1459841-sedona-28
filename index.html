@@ -3,27 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2? family = PT + Sans: wght @ 400; 700 & display = swap">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page-body">
   <header class="main-header">
         <nav class="main-navigation">
-     		<a class="main-header-logo" title="Главная страница">
-    			<img src="logo.svg" width="138" height="70" alt="Логотип Седона">
+     		<a href="blank.html">ИНФОРМАЦИЯ</a>
+  		 	<a href="blank.html">ФОТО И ВИДЕО</a>
+  		 	<a class="main-header-logo" title="Главная страница">
+    			<img src="img/logo.png" width="138" height="70" alt="Логотип Седона">
   			</a>
-  			<div class="main-navigation-wrapper">
-  				<div class="container">
-       				<ul>
-  		  				<li><a href="blank.html">ИНФОРМАЦИЯ</a></li>
-  		 				<li><a href="blank.html">ФОТО И ВИДЕО</a></li>
-  		  				<li><a href="map.html">КАРТА ШТАТА</a></li>
-  		  				<li><a href="inner.html">ГОСТИНИЦЫ</a></li>
-  	   				</ul>
-  	   			</div>
-  	   		</div>
-        </nav>	
+  		 	<a href="map.html">КАРТА ШТАТА</a>
+  		  	<a href="inner.html">ГОСТИНИЦЫ</a>
+   	   	</nav>	
   </header>
   <main class="container">
          <p class="main-title">Седона - небольшой городок в Аризоне,<br>заслуживающий большего!</p>
@@ -35,21 +29,21 @@
             		<span>&mdash;&numero; 1 &mdash;</span>
            			<p>Седона - не аттракцион для туристов,<br>там течёт своя жизнь</p>
         		</div>
-            	<img src="Настоящий городок.jpg" width="800" height="256" alt="Настоящий городок">
+            	<img src="img/Настоящий городок.jpg" width="800" height="256" alt="Настоящий городок">
             </div>
               <ul>
               <li class="reason-item">
-                <img src="жилье.svg" width="75" height="72" alt="Жилье">
+                <img src="img/жилье.svg" width="75" height="72" alt="Жилье">
                 <p><b>Жильё</b></p>
                 <p class="reason-item-descr">Рекомендуем пожить в настоящем<br>мотеле, всё как в кино!</p>
                </li>
                <li class="reason-item">
-                <img src="Еда.svg" width="75" height="70" alt="Еда">
+                <img src="img/Еда.svg" width="75" height="70" alt="Еда">
                 <p><b>Еда</b></p>
                 <p class="reason-item-descr">Всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!</p>
                </li>
                <li class="reason-item">
-                 <img src="Сувениры.svg" width="64" height="77" alt="Сувениры">
+                 <img src="img/Сувениры.svg" width="64" height="77" alt="Сувениры">
                  <p><b>Сувениры</b></p>
                  <p class="reason-item-descr">Не только китайского, но и местного,<br>производства</p>
                </li> 
@@ -57,7 +51,7 @@
         </section>
         <section class="real-town">
         	<div class="blue-first-reason">
-           		<img src="Мост дьявола.jpg" width="800" height="256" alt="Мост дьявола">
+           		<img src="img/мост дьявола.jpg" width="800" height="256" alt="Настоящий городок">
            		<div class="first-reason">
             		<h2>Там есть<br>мост дьявола</h2>
             		<span>&mdash;&numero; 2 &mdash;</span>
@@ -86,8 +80,9 @@
             <h2 class="question-title">Заинтересовались?</h2>
             <p class="question-descr">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           </section>
-                     <form action="https://echo.htmlacademy.ru" method="post">
-                    <h2>Поиск гостиницы в Седоне</h2>
+          <section class="modal">
+                    <form action="https://echo.htmlacademy.ru" method="post">
+                    <button class="button button-search-of-hotel" type="button">Поиск гостиницы в Седоне</button>
                     <label for="date_of_arrival">Дата заезда:</label>
                     <input class="calendar-icon" id="date_of_arrival" type="date" name="date_of_arrival">
                     <label for="date_of_departure">Дата выезда:</label>
@@ -105,18 +100,18 @@
 	 <p class="footer-contacts">#visitsedona<br>тел:+7(495)666-02-66</p>
     <section class="footer-social">
 		<a class="social-button" href="#">Твиттер
-           <img src="twitter.svg" width="46" height="48" alt="Твиттер">
+           <img src="img/twitter.svg" width="46" height="48" alt="Твиттер">
         </a>
       	<a class="social-button" href="#">Фейсбук
-           <img src="facebook.svg" width="46" height="48" alt="Фейсбук">
+           <img src="img/facebook.svg" width="46" height="48" alt="Фейсбук">
         </a>
         <a class="social-button" href="#">Ютьюб
-           <img src="youtube.svg" width="46" height="48" alt="Ютьюб">
+           <img src="img/youtube.svg" width="46" height="48" alt="Ютьюб">
        	</a>
     </section>
     	<p class="footer-copyright">
 			website by <a href="https://htmlacademy.ru">
-      		<img src="logo-htmlacademy.svg" width="115" height="41" alt="htmlacademy"></a>
+      		<img src="img/logo-htmlacademy.svg" width="115" height="41" alt="htmlacademy"></a>
       	</p>    	
    </div>
   </footer>

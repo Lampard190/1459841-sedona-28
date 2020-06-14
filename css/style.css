@@ -19,8 +19,9 @@
 body {
 	min-width: 1280px;
 	margin: 0;
+	margin-left: 40px;
 	padding: 0;
-	font-family: "PT-Sans";
+	font-family: 'PT Sans', sans-serif;
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: 400;
@@ -28,12 +29,11 @@ body {
 	text-transform: uppercase;
 	background-color: var(--basic-white);
 	background-image:
-		url("C:\Users\32112\Desktop\1459841-sedona-28\img\background photo.png"),
-		url("C:\Users\32112\Desktop\1459841-sedona-28\img\background photo-1.png"),
-		url("C:\Users\32112\Desktop\1459841-sedona-28\img\welcome.png");
-	background-position: top center;
-	background-repeat: no-repeat;
+		url("../img/background photo.png"), url("../img/background photo-1.png"),url("../img/welcome.png"), url("../img/Shape.png"), url("../img/map.png");
+		background-position: top 55px left 40px, top 508px left 40px, top 132px left 411px, top 2169px left 41px;
+		background-repeat: no-repeat;
 }
+
 
 a {
 	text-decoration: none;
@@ -59,55 +59,39 @@ img {
 
 .main-navigation {
 	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-.main-navigation-wrapper {
-	width: 100%;
-	margin-bottom: 15px;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 1200px;
+	padding-top: 15px;
+	height: 70px;
 	background-color: var(--basic-white);
-}
-
-.main-header {
-	margin-bottom: 70px;
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: bold;
 }
 
 .main-header-logo {
 	width: 138px;
 	height: 70px;
+	align-self: center;
 }
 
-.container {
-	width: 1240px;
-	margin: 0 auto
-	padding: 0 40px;
-}
-
-div>ul {
-	width: 1200px;
-	min-height: 70px;
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-div>ul a:not([href]) {
+a:not([href]) {
 	background-color: var(--basic-white);
 }
-
-div>ul a{
+a {
 	color: var(--basic-black);
 }
 
-div>ul a:hover {
+a:hover {
 	color: var(--basic-blue);
 }
 
-div>ul a:focus {
+a:focus {
 	color: var(--basic-light-gray);
 }
 
-div>ul a:active{
+a:active{
 	color: var(--basic-black);
 	opacity: 0.3;
 }
@@ -116,26 +100,32 @@ div>ul a:active{
 /* Main*/
 
 .real-town {
+	width: 1200px;
 	display: flex;
    	flex-wrap: wrap;
 }
 
 .blue-first-reason {
   display: flex;
-  width: 100%;
+  width: 1200px;
   text-align: center;
-  padding-top: 47px;
-}
+  margin-top: 51px;
+ }
 
 
 .real-town ul {
+	width: 1200px;
 	display: flex;
+	justify-content: space-around;
+	
 }
 
 .reason-item {
-	margin: auto;
+	margin: 0;
 	text-align: center;
-	padding-right: 124px;
+	padding-right: 65px;
+	padding-top: 60px;
+	padding-left: 35px;
 }
 
 
@@ -148,6 +138,7 @@ div>ul a:active{
 .first-reason h2 {
 	font-size: 21px;
 	line-height: 21px;
+	padding-top: 47px;
 	color: var(--basic-white)!important;
 }
 
@@ -158,7 +149,9 @@ div>ul a:active{
 }
 
 .container ul {
+	width: 1200px;
 	list-style: none;
+	padding-left: 73px;
 }
 
 .reason-item-descr {
@@ -169,75 +162,87 @@ div>ul a:active{
 
 .more-reason-container {
     display: flex;
-    width: 100%;
-   
-}
+    justify-content: space-around;
+    width: 1200px;
+    background-color: var(--basic-white-blue);
+    padding-bottom: 26px;
+  }
 
 .more-reason {
-    margin: auto;
-	text-align: center;
-
-	padding-top: 47px;
-	padding-left: 96px;
+   	text-align: center;
 }
 
 .more-reason h2 {
 	font-size: 21px;
+	margin-top: 0;
 	line-height: 21px;
-	color: var(--basic-black);
+	padding-top: 47px;
+	padding-bottom: 25px;
+	margin-bottom: 0px;
 }
 
 .more-reason span, .more-reason p {
 	font-size: 14px;
 	line-height: 21px;
+	padding-top: 25px;
 	color: var(--basic-gray);
 }
 
 .main-title {
+	width: 1200px;
+	padding-top: 606px;
+	font-weight: bold;
 	font-size: 21px;
-	font-style: bold;
-	text-align: center;
 	line-height: 26px;
+	text-align: center;
 	color: var(--basic-black);
 }
 
 .main-descr {
+	width: 1200px;
+	margin-top: 16px;
 	text-align: center;
 	line-height: 26px;
 }
 
 .question-title {
-	padding-top: 58px;
+	width: 1200px;
+	padding-top: 61px;
 	font-size: 30px;
-	font-style: bold;
 	text-align: center;
 	line-height: 24px;
 	color: var(--basic-black);
 }
 
 .question-descr {
+	width: 1200px;
 	text-align: center;
+	font-size: 14px;
 	line-height: 26px;
 }
 
 /* Footer */
 
 .main-footer {
-	padding: 23px 0;
+	width: 1200px;
+	margin-left: 40px;
+	margin-top: 23px;
 	color: var(--basic-black);
 	background-color: var(--basic-white);
-	font: inherit;
 }
 
 .main-footer .container {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr; 
+	grid-template-columns: 1fr 1fr 1fr;
 }
 
 .footer-contacts {
     text-align: center;
-	width: 251px;
-	margin: 0;
+  	width: 251px;
+  	padding-bottom: 22px;
+  	font-size: 21px;
+  	line-height: 26px;
+  	font-weight: bold;
 }
 
 
@@ -247,16 +252,17 @@ div>ul a:active{
 
 .footer-social {
     display: flex;
+    justify-content: space-around;
     align-items: center;
     font-size: 0;
-	width: 150px;
-	justify-self: center;
+	width: 162px;
+	
 }
 
 .footer-copyright {
-	width: 210px;
-	margin: 0;
-	justify-self: end;
+	width: 205px;
+	align-self: end;
+	margin-top: 38px;
 }
 
 .main-footer a {
@@ -266,35 +272,34 @@ div>ul a:active{
 
 /* Modal */
 
-.form {
-	color: var(--basic-black);
-	background-color: var(--basic-white);
+.modal {
+	width: 568px;
+	height: 481px;
+	margin-left: 315px;
 }
 
-.form h2 {
+.button-search-of-hotel {
 	width: 568px;
 	height: 86px;
-	padding-top: 60px;
 	background-color: var(--basic-light-gray);
 	color: var(--basic-white);
 	text-align: center;
-	font-style: bold;
-	font--size: 21px;
+	vertical-align: middle;
+	font-size: 21px !important;
 	line-height: 26px;
+	border: none;
 }
 
-.form h2:hover,
-.form h2:focus {
+.button-search-of-hotel:hover,
+.button-search-of-hotel:focus {
 	background-color: var(--basic-dark-gray);
 }
 
-.form h2:active {
+.button-search-of-hotel:active {
 	background-color: var(--basic-extra-gray);
 }
 
 button {
-	font: inherit;
-	color: var(--basic-white);
 	text-align: center;
 	vertical-align: middle;
 	text-transform: uppercase;
@@ -304,7 +309,9 @@ button {
 	width: 458px;
 	height: 58px;
 	padding: 16px;
-	margin: 30px;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
 	background-color: var(--basic-blue);
 	border: none;
 }
@@ -332,46 +339,46 @@ button {
 }
 
 .calendar-icon {
-	background-image: url("C:\Users\32112\Desktop\1459841-sedona-28\img\calendar-1.svg");
+	background-image: url("../img/calendar-1.svg");
 	background-position: 326px center;
 	background-repeat: no-repeat;
 }
 
 .calendar-icon:hover {
-	background-image: url("C:\Users\32112\Desktop\1459841-sedona-28\img\calendar-2.svg");
+	background-image: url("../img/calendar-2.svg");
 	background-position: 326px center;
 	background-repeat: no-repeat;
 }
 
 .calendar-icon:active {
-background-image: url("C:\Users\32112\Desktop\1459841-sedona-28\img\calendar-3.svg");
+background-image: url("../img/calendar-3.svg");
 	background-position: 326px center;
 	background-repeat: no-repeat;
 }
 
 .amount-icon {
-	background-image: url("C:\Users\32112\Desktop\1459841-sedona-28\img\Rectangle.svg");
+	background-image: url("../img/Rectangle.svg");
 	background-position: 19px center,
 	background-repeat: no-repeat;
-	background-image: url("C:\Users\32112\Desktop\1459841-sedona-28\img\Union.svg");
+	background-image: url("../img/Union.svg");
 	background-position: 95px center,
 	background-repeat: no-repeat;
 }
 
 .amount-icon:hover {
-	background-image: url("C:\Users\32112\Desktop\1459841-sedona-28\img\Rectangle1.svg"),
+	background-image: url("../img/Rectangle1.svg"),
 	background-position: 19px center,
 	background-repeat: no-repeat;
-	background-image: url("C:\Users\32112\Desktop\1459841-sedona-28\img\Union1.svg");
+	background-image: url("../img/Union1.svg");
 	background-position: 95px center,
 	background-repeat: no-repeat;
 }
 
 .amount-icon:active {
-	background-image: url("C:\Users\32112\Desktop\1459841-sedona-28\img\Rectangle2.svg"),
+	background-image: url("../img/Rectangle2.svg"),
 	background-position: 19px center,
 	background-repeat: no-repeat;
-	background-image: url("C:\Users\32112\Desktop\1459841-sedona-28\img\Union2.svg");
+	background-image: url("../img/Union2.svg");
 	background-position: 95px center,
 	background-repeat: no-repeat;
 }
@@ -382,15 +389,16 @@ background-image: url("C:\Users\32112\Desktop\1459841-sedona-28\img\calendar-3.s
 	min-width: 1280px;
 	margin: 0;
 	padding: 0;
-	font-family: "PT-Sans";
+	margin-left: 40px;
+	font-family: 'PT Sans', sans-serif;
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: 400;
 	color: var(--basic-gray);
 	text-transform: uppercase;
 	background-color: var(--basic-white);
-	background-image: url("C:\Users\32112\Desktop\1459841-sedona-28\img\background_inner.png");
-	background-position: top center;
+	background-image: url("../img/background-inner.png");
+	background-position: top 55px left 40px;
 	background-repeat: no-repeat;
 }
 
@@ -402,26 +410,119 @@ a {
 /* Main*/
 
 .filter {
-	display: grid;
-	grid-template-columns: min-content min-content 1fr;
+	display: flex;
+	justify-content: flex-start;
+	width: 1200px;
 }
 
 .checkbox-filter {
 	display: flex;
 	flex-direction: column;
+	justify-content: space-around;
 	text-align: left;
+	align-items: baseline;
 	padding-left: 72px;
-	padding-top: 27px;
+	margin-top: 27px;
+	margin-bottom: 32px;
+	color: var(--basic-white);
+}
+.checkbox-filter label {
+	padding-left: 50px;
 }
 
-.checkbox-filter-price {
+.filter-item {
+	width: 317px;
+	margin-top: 27px;
+	margin-left: 385px;
+	margin-right: 73px;
+}
+
+.checkbox-filter h3 {
+	font-size: 16px;
+	line-height: 21px;
+	margin: 0;
+}
+
+.range-filter {
+	width: 100%;
+}
+
+.filter-item legend {
+	margin-bottom: 10px;
+	font-size: 16px;
+	line-height: 21px;
+	font-weight: 700;
+	color: var(--basic-white);
+}
+
+.range-controls {
+	height: 3px;
+	position: relative;
+	background-color: none;
+	margin-bottom: 33px;
+	margin-top: 20px;
+}
+
+.range-controls .scale {
+	height: 2px;
+	background: grey;
+}
+
+.range-controls .bar {
+	width: 80%;
+	height: 2px;
+	background: var(--basic-white);
+}
+
+.range-controls .toggle {
+	position: absolute;
+	top: -9px;
+	left: 0;
+	width: 4px;
+	height: 4px;
+	padding: 0;
+	border: 8px solid var(--basic-white);
+	background-color: #ABABAB;
+	border-radius: 50%;
+	box-shadow: 0 2px 1px 0  #ABABAB;
+	cursor: pointer;
+}
+
+.range-controls .toggle-max {
+	left: 253px;
+}
+
+.price-controls label {
+	font-size: 14px;
+	padding-top: 7px;
+	padding-bottom: 8px;
+	padding-left: 30px;
+	line-height: 21px;
+	color: var(--basic-white);
+	text-align: center;
+}
+
+.price-controls {
 	display: flex;
-	flex-direction: column;
-	justify-self: flex-end;
-	padding-top: 27px;
-	padding-right: 73px;
-	align-items: center;
-	text-align: left;
+	justify-content: space-around;
+	width: 100%;
+	background-image: url("../img/Разделитель колонок.png");
+	background-position: top 7px left 159px;
+	background-repeat: no-repeat;
+	border: 2px solid #FFFFFF;
+	box-sizing: border-box;
+	border-radius: 2px;
+}
+
+.price-controls input {
+	width: 65px;
+	text-align: center;
+	color: var(--basic-white);
+	background: none;
+	border: none;
+	text-align: center;
+	font-size: inherit;
+	line-height: inherit;
 }
 
 .results {
@@ -435,6 +536,7 @@ a {
 	line-height: 26px;
 	padding-left: 73px;
 	padding-top: 29px;
+	margin-top: 0;
 }
 
 .results p:nth-child(2) {
@@ -442,6 +544,7 @@ a {
 	line-height: 18px;
 	padding-left: 46px;
 	padding-top: 31px;
+	margin-top: 0;
 }
 
 .sorting {
@@ -472,11 +575,15 @@ a {
 
 .estim {
 	padding-left: 537px;
-	justify-self: flex-end;
+	padding-top: 40px;
+}
+
+.estim span {
+	background: #F2F2F2;
 }
 
 .image-hotel {
-	padding-top: 30px;
+	padding-top: 60px;
 	margin-left: 73px;
 }
 
@@ -497,23 +604,60 @@ input[type="checkbox"] {
  }
 
  input[type="checkbox"]+label {
-  	background: url(checkbox-on.svg) no-repeat;
+  	background: url("../img/checkbox-off.png") no-repeat;
  	cursor: pointer;
+ 	margin: auto 0;
  }
 
 input[type="checkbox"]:checked+label {
-	background: url(checkbox-off.svg) no-repeat;
+	background: url("../img/checkbox-on.png") no-repeat;
 }
 
 
- input [type="radio"] {
- 	display: none;
+ input[type="radio"] {
+  display: none;
  }
+
+ input[type="radio"]+label {
+   	cursor: pointer;
+ 	margin: auto 0;
+ 	margin-left: 40px;
+ }
+
+ .sorting-icon label {
+ 	font-size: 0;
+}
+
+.sorting-icon {
+	position: relative;
+}
+
+.sorting-icon::after {
+	content: **;
+	width: 34px;
+	height: 11px;
+	background-image: url(*img/icon-up-dir.svg*);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
 
  .card-title {
  	font-size: 21px;
  	line-height: 26px;
  	color: var(--basic-black);
+ }
+
+ .card-title:hover {
+ 	font-size: 21px;
+ 	line-height: 26px;
+ 	color: var(--basic-blue);
+ }
+
+ .card-title:active {
+ 	font-size: 21px;
+ 	line-height: 26px;
+ 	color: var(--basic-black);
+ 	opacity: 0.3;
  }
 
 .button {
@@ -528,31 +672,34 @@ input[type="checkbox"]:checked+label {
 	font-size: 14px;
 	width: 137px;
 	height: 36px;
-	color: var(--basic-white);
 	padding: 8px 36px;
-	opacity: 0;
-	border: 2px solid #D8D8D8;
+	margin-left: 85px;
+	background: none;
+	border: 2px solid #FFFFFF;
 }
 
 .button-show:hover {
     color: var(--basic-black);
-	opacity: 1;
-	background-color: var(--basic-white)
 	border: 2px solid #FFFFFF;
+	background-color: var(--basic-white);
 }
 
 fieldset {
 	border: none;
+	margin: 0;
+	padding: 0;
 }
 
 .price {
 	color: var(--basic-blue);
 	font-size: 12px;
 	line-height: 18px;
+	cursor: pointer;
 }
 
 .type {
 	color: var(--basic-black);
+	opacity: 0.3;
 	font-size: 12px;
 	line-height: 18px;
 	text-decoration: underline;
@@ -561,7 +708,7 @@ fieldset {
 }
 
 .type:hover {
-	color: var(----basic-blue);
+	color: var(--basic-blue);
 	font-size: 12px;
 	line-height: 18px;
 	text-decoration: underline;
@@ -570,13 +717,16 @@ fieldset {
 }
 
 .type:active {
-	color: var(----basic-black);
+	color: var(--basic-black);
+	opacity: 1;
 	font-size: 12px;
 	line-height: 18px;
+	text-decoration: none;
 }
 
 .rating {
 	color: var(--basic-black);
+	opacity: 0.3;
 	font-size: 12px;
 	line-height: 18px;
 	text-decoration: underline;
@@ -585,7 +735,7 @@ fieldset {
 }
 
 .rating:hover {
-	color: var(----basic-blue);
+	color: var(--basic-blue);
 	font-size: 12px;
 	line-height: 18px;
 	text-decoration: underline;
@@ -595,8 +745,10 @@ fieldset {
 
 .rating:active {
 	color: var(----basic-black);
+	opacity: 1;
 	font-size: 12px;
 	line-height: 18px;
+	text-decoration: none;
 }
 
 .button-more {
@@ -615,7 +767,7 @@ fieldset {
 .button-more:active {
 	color: #C4C4C4;
 	background-color: var(--basic-extra-blue);
-};
+}
 
 .button-buy {
 	width: 142px;
@@ -632,17 +784,7 @@ fieldset {
 	background-color: var(--basic-extra-gray);
 }
 
-.icon-up-dir {
-	background-image: url("C:\Users\32112\Desktop\1459841-sedona-28\img\icon-up-dir.svg");
-	background-position: 704px center;
-	background-repeat: no-repeat;
-}
 
-.icon-up-dir {
-	background-image: url("C:\Users\32112\Desktop\1459841-sedona-28\img\icon-down-dir.svg");
-	background-position: 727px center;
-	background-repeat: no-repeat;
-}
 
 
 
