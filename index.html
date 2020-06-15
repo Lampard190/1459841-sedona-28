@@ -9,15 +9,15 @@
   </head>
   <body class="page-body">
   <header class="main-header">
-        <nav class="main-navigation">
-     		<a href="blank.html">ИНФОРМАЦИЯ</a>
-  		 	<a href="blank.html">ФОТО И ВИДЕО</a>
-  		 	<a class="main-header-logo" title="Главная страница">
+  		<a class="main-header-logo" title="Главная страница">
     			<img src="img/logo.png" width="138" height="70" alt="Логотип Седона">
-  			</a>
-  		 	<a href="map.html">КАРТА ШТАТА</a>
-  		  	<a href="inner.html">ГОСТИНИЦЫ</a>
-   	   	</nav>	
+  		</a>
+        <nav class="main-navigation">
+     		    <a href="blank.html">ИНФОРМАЦИЯ</a>
+  		 		<a href="blank.html">ФОТО И ВИДЕО</a>
+  		   		<a href="map.html">КАРТА ШТАТА</a>
+  		  		<a href="inner.html">ГОСТИНИЦЫ</a>
+  		</nav>	
   </header>
   <main class="container">
          <p class="main-title">Седона - небольшой городок в Аризоне,<br>заслуживающий большего!</p>
@@ -80,20 +80,26 @@
             <h2 class="question-title">Заинтересовались?</h2>
             <p class="question-descr">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           </section>
-          <section class="modal">
-                    <form action="https://echo.htmlacademy.ru" method="post">
                     <button class="button button-search-of-hotel" type="button">Поиск гостиницы в Седоне</button>
-                    <label for="date_of_arrival">Дата заезда:</label>
-                    <input class="calendar-icon" id="date_of_arrival" type="date" name="date_of_arrival">
-                    <label for="date_of_departure">Дата выезда:</label>
-                    <input class="calendar-icon" id="date_of_departure" type="date" name="date_of_departure"><br>
-                    <label for="amount">Взрослые:</label>
-                    <input class="amount-icon" type="number" name="amount" id="amount" min="1" placeholder="2">
-                    <label for="amount">Дети:</label>
-                    <input class="amount-icon" type="number" name="amount" id="amount" min="0" placeholder="0"><br>             
-                    <button class="button button-search" type="submit" value="Найти">Найти</button>
-               </form>
-          </section>
+                    <section class="modal">
+                    	<form action="https://echo.htmlacademy.ru" method="post">
+                    		<div class="date_form">
+                    			<label for="date_of_arrival">Дата заезда:</label>
+                    			<input class="calendar-icon" id="date_of_arrival" type="text" name="date_of_arrival" placeholder="24 апреля 2017">
+                    		</div>
+                    		<div class="date_form">
+                    			<label for="date_of_departure">Дата выезда:</label>
+                    			<input class="calendar-icon" id="date_of_departure" type="text" name="date_of_departure" placeholder="4 июля 2017">
+                    		</div>
+                            <div class="amount_form">
+                    			<label for="amount">Взрослые:</label>
+                    			<input class="amount-icon" type="number" name="amount" id="amount" min="1" placeholder="2">
+                                <label for="amount">Дети:</label>
+                    			<input class="amount-icon" type="number" name="amount" id="amount" min="0" placeholder="0">
+                    		</div>
+                    		<button class="button button-search" type="submit" value="Найти">Найти</button>
+              			</form>
+          			</section>
         </main>        
   <footer class="page-footer main-footer">
    <div class="container">
