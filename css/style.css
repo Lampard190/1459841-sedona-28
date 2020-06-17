@@ -17,9 +17,8 @@
 }
 
 body {
-	min-width: 1280px;
+	min-width: 1200px;
 	margin: 0 auto;
-	margin-left: 40px;
 	padding: 0;
 	font-family: 'PT Sans', sans-serif;
 	font-size: 14px;
@@ -28,13 +27,28 @@ body {
 	color: var(--basic-gray);
 	text-transform: uppercase;
 	background-color: var(--basic-white);
-	background-image:
-		url("../img/background photo.png"), url("../img/background photo-1.png"),url("../img/welcome.png"), url("../img/Shape.png"), url("../img/map.png");
-		background-position: top 55px left 40px, top 508px left 40px, top 132px left 411px, top 2169px left 41px;
-		background-repeat: no-repeat;
-
 }
 
+.page-body {
+	position: relative;
+    width: 1200px;
+    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, .5);
+    box-shadow: 0 0 15px rgba(0, 0, 0, .5);
+    background-color: #ffffff;
+}
+
+.page-main::before {
+	content: "";
+	width: 1200px;
+	height: 564px;
+	display: block;
+	background-image:
+		url('../img/whiteback.png'),
+		url('../img/welcome-back.png');
+	background-position: center 173%, center 0%;
+	background-repeat: no-repeat;
+	background-size: auto, cover;
+}
 
 a {
 	text-decoration: none;
@@ -47,6 +61,7 @@ img {
 
 .page{
 	height: 100%;
+	width: 1280px;
 }
 
 .page-body {
@@ -65,9 +80,9 @@ img {
 .main-navigation {
 	display: flex;
 	justify-content: space-around;
+	align-items: center;
 	width: 1200px;
-	padding-top: 15px;
-	height: 55px;
+	height: 56px;
 	background-color: var(--basic-white);
 	font-size: 14px;
 	line-height: 26px;
@@ -76,8 +91,7 @@ img {
 
 .main-header-logo {
 	position: absolute;
-	left: 571px;
-	z-index: 2;
+	left: 531px;
 	width: 138px;
 	height: 70px;
 }
@@ -196,7 +210,7 @@ a:active{
 
 .main-title {
 	width: 1200px;
-	padding-top: 606px;
+	padding-top: 42px;
 	font-weight: bold;
 	font-size: 21px;
 	line-height: 26px;
@@ -231,8 +245,6 @@ a:active{
 
 .main-footer {
 	width: 1200px;
-	margin-left: 40px;
-	margin-top: 23px;
 	color: var(--basic-black);
 	background-color: var(--basic-white);
 }
@@ -243,17 +255,18 @@ a:active{
 }
 
 .footer-contacts {
+	justify-self: center;
+	align-items: center;
     text-align: center;
   	width: 251px;
-  	padding-bottom: 22px;
-  	font-size: 21px;
+   	font-size: 21px;
   	line-height: 26px;
   	font-weight: bold;
 }
 
 
 .social-button {
-	font-size: : 0;
+	font-size: 0;
 }
 
 .footer-social {
@@ -262,12 +275,16 @@ a:active{
     align-items: center;
     font-size: 0;
 	width: 162px;
+	margin: 0 auto;
 	
 }
 
 .footer-copyright {
+	display: flex;
+	justify-content: space-around;
+	justify-self: center;
+	align-items: center;
 	width: 205px;
-	align-self: end;
 	margin-top: 38px;
 }
 
@@ -302,6 +319,18 @@ a:active{
 
 /* Modal */
 
+.page-footer::before {
+	content: "";
+	width: 1200px;
+	height: 473px;
+	display: block;
+	background-image:
+		url('../img/map.png');
+		background-position: 0% 0%;
+		background-repeat: no-repeat;
+		background-size: auto;
+}
+
 .modal {
 	width: 568px;
 	height: 395px;
@@ -329,7 +358,7 @@ a:active{
 }
 
 .amount_form label:nth-of-type(2) {
-	margin-left: 53px;
+	margin-left: 34px;
 }
 
 .button {
@@ -339,6 +368,8 @@ a:active{
 }
 
 .button-search {
+	font-family: 'PT Sans', sans-serif;
+	color: var(--basic-white);
 	width: 458px;
 	height: 58px;
 	padding: 16px;
@@ -392,8 +423,10 @@ a:active{
 }
 
 .modal input[type="number"] {
-	width: 114px;
+	position: relative;
+	width: 65px;
 	height: 38px;
+	margin-left: 0px;
    	background-color: #F2F2F2;
    	font-weight: bold;
    	text-align: center;
@@ -428,49 +461,63 @@ background-image: url("../img/calendar-3.svg");
 	background-repeat: no-repeat;
 }
 
-.amount-icon {
+.count-down {
+	width: 27px;
+	margin-left: 20px;
 	background-image: url("../img/Rectangle.svg");
-	background-position: 12px center;
+	background-position: 16px 18px;
 	background-repeat: no-repeat;
-	background-image: url("../img/Union.svg");
-	background-position: 89px center;
-	background-repeat: no-repeat;
+	border: none;
 }
 
-.amount-icon:hover {
+.count-down:hover {
+	width: 27px;
+	margin-left: 20px;
 	background-image: url("../img/Rectangle1.svg");
-	background-position: 12px center;
+	background-position: 16px 18px;
 	background-repeat: no-repeat;
-	background-image: url("../img/Union1.svg");
-	background-position: 89px center;
-	background-repeat: no-repeat;
+	border: none;
 }
 
-.amount-icon:active {
+.count-down:active {
+	width: 27px;
+	margin-left: 20px;
 	background-image: url("../img/Rectangle2.svg");
-	background-position: 12px center;
+	background-position: 16px 18px;
 	background-repeat: no-repeat;
+	border: none;
+}
+
+
+.count-up {
+	width: 27px;
+	background-image: url("../img/Union.svg");
+	background-position: 0px 14px;
+	background-repeat: no-repeat;
+	border: none;
+}
+
+.count-up:hover {
+	width: 27px;
+	background-image: url("../img/Union1.svg");
+	background-position: 0px 14px;
+	background-repeat: no-repeat;
+	border: none;
+}
+
+.count-up:active {
+	width: 27px;
 	background-image: url("../img/Union2.svg");
-	background-position: 89px center;
+	background-position: 0px 14px;
 	background-repeat: no-repeat;
+	border: none;
 }
 
 /*inner*/
 
-.body-inner {
-	min-width: 1280px;
-	margin: 0 auto;
-	padding: 0;
-	margin-left: 40px;
-	font-family: 'PT Sans', sans-serif;
-	font-size: 14px;
-	line-height: 21px;
-	font-weight: 400;
-	color: var(--basic-gray);
-	text-transform: uppercase;
-	background-color: var(--basic-white);
+.inner{
 	background-image: url("../img/background-inner.png");
-	background-position: top 55px left 40px;
+	background-position: 40px 50px;
 	background-repeat: no-repeat;
 }
 
@@ -495,7 +542,6 @@ a {
 	align-items: baseline;
 	padding-left: 72px;
 	margin-top: 27px;
-	margin-bottom: 32px;
 	color: var(--basic-white);
 }
 .checkbox-filter label {
@@ -530,7 +576,6 @@ a {
 .range-controls {
 	height: 3px;
 	position: relative;
-	background-color: 0;
 	margin-bottom: 33px;
 	margin-top: 20px;
 }
@@ -601,6 +646,7 @@ a {
 	display: flex;
 	flex-wrap: wrap;
 	width: 1200px;
+	margin-top: 31px;
 }
 
 .results p:first-child {
@@ -635,66 +681,66 @@ a {
 
 .sorting-icon::before {
 	content: "";
-	background-image: url('../img/icon-up-dir.png');
+	background-image: url('../img/up.svg');
 	background-repeat: no-repeat;
 	width: 10px;
 	height: 11px;
 	position: absolute;
-	left: 503px;
+	left: 478px;
 	cursor: pointer;
 }
 
 .sorting-icon::before:hover {
 	content: "";
-	background-image: url('../img/icon-up-dir1.png');
+	background-image: url('../img/uphover.svg');
 	background-repeat: no-repeat;
 	width: 10px;
 	height: 11px;
 	position: absolute;
-	left: 503px;
+	left: 478px;
 }
 
 .sorting-icon::before:active {
 	content: "";
-	background-image: url('../img/icon-up-dir2.png');
+	background-image: url('../img/upactive.svg');
 	background-repeat: no-repeat;
 	width: 10px;
 	height: 11px;
 	position: absolute;
-	left: 503px;
+	left: 478px;
 }
 
 .sorting-icon::after {
 	content: "";
-	background-image: url('../img/icon-down-dir.png');
+	background-image: url('../img/down.svg');
 	background-repeat: no-repeat;
 	width: 10px;
 	height: 11px;
 	position: absolute;
-	left: 526px;
+	left: 501px;
 	bottom: 25px;
 	cursor: pointer;
 }
 
 .sorting-icon::after:hover {
 	content: "";
-	background-image: url('../img/icon-down-dir1.png');
+	background-image: url('../img/downhover.svg');
 	background-repeat: no-repeat;
 	width: 10px;
 	height: 11px;
 	position: absolute;
-	left: 526px;
+	left: 501px;
 	bottom: 25px;
 }
 
 .sorting-icon::after:active {
 	content: "";
-	background-image: url('../img/icon-down-dir2.png');
+	background-image: url('../img/downactive.svg');
 	background-repeat: no-repeat;
 	width: 10px;
 	height: 11px;
 	position: absolute;
-	left: 526px;
+	left: 501px;
 	bottom: 25px;
 }
 
@@ -710,9 +756,32 @@ a {
 	padding-left: 29px;
 }
 
+.hotel-estim p {
+	display: flex;
+	justify-content: space-between;
+}
+
+.hotel-estim span:nth-child(2) {
+	margin-right: 87px;
+}
+
+.hotel-price {
+	display: flex;
+	justify-content: space-between;
+}
+
 .estim {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-top: 29px;
+	margin-right: 73px;
 	padding-left: 537px;
 	padding-top: 40px;
+}
+
+.estim img {
+	align-self: flex-end;
 }
 
 .estim span {
@@ -743,11 +812,13 @@ input[type="checkbox"] {
  input[type="checkbox"]+label {
   	background: url("../img/checkbox-off.png") no-repeat;
  	cursor: pointer;
- 	margin: auto 0;
+ 	margin: 0;
+ 	height: 23px;
  }
 
 input[type="checkbox"]:checked+label {
 	background: url("../img/checkbox-on.png") no-repeat;
+	height: 23px;
 }
 
 

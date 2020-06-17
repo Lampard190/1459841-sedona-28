@@ -19,7 +19,7 @@
   		  		<a href="inner.html">ГОСТИНИЦЫ</a>
   		</nav>	
   </header>
-  <main class="container">
+  <main class="page-main container">
          <p class="main-title">Седона - небольшой городок в Аризоне,<br>заслуживающий большего!</p>
   		<p class="main-descr">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
        <section class="real-town">
@@ -81,26 +81,7 @@
             <p class="question-descr">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           </section>
                     <button class="button button-search-of-hotel" type="button">Поиск гостиницы в Седоне</button>
-                    <section class="modal">
-                    	<form action="https://echo.htmlacademy.ru" method="post">
-                    		<div class="date_form">
-                    			<label for="date_of_arrival">Дата заезда:</label>
-                    			<input class="calendar-icon" id="date_of_arrival" type="text" name="date_of_arrival" placeholder="24 апреля 2017">
-                    		</div>
-                    		<div class="date_form">
-                    			<label for="date_of_departure">Дата выезда:</label>
-                    			<input class="calendar-icon" id="date_of_departure" type="text" name="date_of_departure" placeholder="4 июля 2017">
-                    		</div>
-                            <div class="amount_form">
-                    			<label for="amount">Взрослые:</label>
-                    			<input class="amount-icon" type="number" name="amount" id="amount" min="1" placeholder="2">
-                                <label for="amount">Дети:</label>
-                    			<input class="amount-icon" type="number" name="amount" id="amount" min="0" placeholder="0">
-                    		</div>
-                    		<button class="button button-search" type="submit" value="Найти">Найти</button>
-              			</form>
-          			</section>
-        </main>        
+     </main>        
   <footer class="page-footer main-footer">
    <div class="container">
 	 <p class="footer-contacts">#visitsedona<br>тел:+7(495)666-02-66</p>
@@ -116,10 +97,36 @@
        	</a>
     </section>
     	<p class="footer-copyright">
-			website by <a href="https://htmlacademy.ru">
+			website by<a href="https://htmlacademy.ru">
       		<img src="img/logo-htmlacademy.svg" width="115" height="41" alt="htmlacademy"></a>
       	</p>    	
    </div>
   </footer>
  </body>
 </html>
+
+<!--Модальное окно-->
+
+<section class="modal">
+                    	<form action="https://echo.htmlacademy.ru" method="post">
+                    		<div class="date_form">
+                    			<label for="date_of_arrival">Дата заезда:</label>
+                    			<input class="calendar-icon" id="date_of_arrival" type="text" name="date_of_arrival" placeholder="24 апреля 2017">
+                    		</div>
+                    		<div class="date_form">
+                    			<label for="date_of_departure">Дата выезда:</label>
+                    			<input class="calendar-icon" id="date_of_departure" type="text" name="date_of_departure" placeholder="4 июля 2017">
+                    		</div>
+                            <div class="amount_form">
+                    			<label for="amount-number">Взрослые:</label>
+                    			<button class="button count-down"></button>
+                    			<input class="amount-icon" type="number" name="amount" id="amount-number" min="1" placeholder="2">
+                    			<button class="button count-up"></button>
+                                <label for="amount-number-kids">Дети:</label>
+                                <button class="button count-down"></button>
+                    			<input class="amount-icon" type="number" name="amount" id="amount-number-kids" min="0" placeholder="0">
+                    			<button class="button count-up"></button>
+                    		</div>
+                    		<button class="button button-search" type="submit" value="Найти">Найти</button>
+              			</form>
+          			</section>
