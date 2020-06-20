@@ -10,13 +10,17 @@
  <body class="page-body inner">
   	<header class="main-header">
       <a class="main-header-logo"  href="index.html" title="На главную страницу">
-        <img src="img/logo.png" width="138" height="70" alt="Логотип Седона">
+        <img src="img/logo.svg" width="138" height="70" alt="Логотип Седона">
       </a>
         <nav class="main-navigation">
-        <a href="blank.html">ИНФОРМАЦИЯ</a>
-        <a href="blank.html">ФОТО И ВИДЕО</a>
-        <a href="map.html">КАРТА ШТАТА</a>
-        <a href="inner.html">ГОСТИНИЦЫ</a>
+        <div class="main-navigation-left">
+            <a href="blank.html">ИНФОРМАЦИЯ</a>
+          <a href="blank.html">ФОТО И ВИДЕО</a>
+        </div>
+        <div class="main-navigation-right">
+            <a href="map.html">КАРТА ШТАТА</a>
+            <a href="inner.html">ГОСТИНИЦЫ</a>
+          </div>
         </nav>  
   </header>
   <main>
@@ -85,10 +89,12 @@
   			<img class="image-hotel" src="img/Amara.jpg" width="135" height="90" alt="Гостиница Amara Resort&SPA">
   	  		<div class="hotel-estim">
   	  			<h3 class="card-title">Amara Resort & SPA</h3>
-  				<p><span>Гостиница</span> <span>от 4000 р.</span></p>
-  				<button class="button button-more">Подробнее</button>
-  				<button class="button button-buy">Забронировать</button>
-  			</div>
+  				  <p><span>Гостиница</span> <span>от 4000 р.</span></p>
+                        <div class="hotel-button">
+  				  <button class="button button-more">Подробнее</button>
+  				  <button class="button button-buy">Забронировать</button>
+          </div>
+  			   </div>
   			<p class="estim">
   	    		<img src="img/4stars.svg" width="91" height="17" alt="4 звезды">
             <span>Рейтинг:8,5</span>
@@ -99,8 +105,10 @@
   	    	<div class="hotel-estim">
   	    		<h3 class="card-title">Desert Quail Inn</h3>
   	    		<p><span>Мотель</span> <span>от 3000 р.</span></p>
+            <div class="hotel-button">
   	    		<button class="button button-more">Подробнее</button>
   		   	 	<button class="button button-buy">Забронировать</button>
+           </div>
   		   	 </div>
   		    <p class="estim">
   		  		<img src="img/3stars.svg" width="66" height="17" alt="3 звезды">
@@ -112,8 +120,10 @@
   	     	<div class="hotel-estim">
   	     		<h3 class="card-title">Villas at Poco Diablo</h3>
   	    		<p><span>Апартаменты</span> <span>от 2000 р.</span></p>
+            <div class="hotel-button">
           	<button class="button button-more">Подробнее</button>
   		    	<button class="button button-buy">Забронировать</button>
+          </div>
   		    </div>
   		    <p class="estim">
   		    	<img src="img/2stars.svg" width="42" height="17" alt="2 звезды">
@@ -123,7 +133,7 @@
   </main>
 <footer class="main-footer">
    <div class="container">
-   <p class="footer-contacts">#visitsedona<br>тел:+7(495)666-02-66</p>
+   <p class="footer-contacts">#visitsedona<br>тел: +7 (495) 666-02-66</p>
     <section class="footer-social">
     <a class="social-button" href="#">Твиттер
            <img src="img/twitter.svg" width="46" height="48" alt="Твиттер">
