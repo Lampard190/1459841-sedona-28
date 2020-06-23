@@ -49,6 +49,7 @@ img {
 .page{
 	height: 100%;
 	width: 1280px;
+	margin: 0 auto;
 }
 
 .page-body {
@@ -102,7 +103,7 @@ img {
 }
 
 a:not([href]) {
-	background-color: var(--basic-white);
+	z-index: 1;
 }
 a {
 	color: var(--basic-black);
@@ -388,7 +389,10 @@ a:active{
 
 
 .modal {
-	display: none;
+	display: flex;
+	border: 3px solid red;
+	outline-offset: -3px;
+	/*display: none;*/
 	width: 568px;
 	height: 395px;
 	margin-left: 315px;
@@ -415,7 +419,7 @@ a:active{
 }
 
 .amount_form label:nth-of-type(2) {
-	margin-left: 34px;
+	margin-left: 14px;
 }
 
 .button {
@@ -458,7 +462,7 @@ a:active{
 }
 
 .modal input[type="text"] {
-	width: 346px;
+	width: 268px;
 	height: 48px;
    	background-color: #F2F2F2;
    	padding-left: 13px;
@@ -500,27 +504,33 @@ a:active{
 	background: #FFFFFF;
 	border: 2px solid #E5E5E5;
 }
-.calendar-icon {
+.calendar {
+	width: 59px;
+	background-image: url("../img/calendar.svg");
+	background-position: 25px 13px;
+	background-repeat: no-repeat;
+	border: none;
+}
+
+.calendar:hover {
+	width: 59px;
 	background-image: url("../img/calendar-1.svg");
-	background-position: 317px center;
+	background-position: 25px 13px;
 	background-repeat: no-repeat;
+	border: none;
 }
 
-.calendar-icon:hover {
-	background-image: url("../img/calendar-2.svg");
-	background-position: 317px center;
+.calendar:active {
+	width: 59px;
+	background-image: url("../img/calendar2.svg");
+	background-position: 25px 13px;
 	background-repeat: no-repeat;
-}
-
-.calendar-icon:active {
-background-image: url("../img/calendar-3.svg");
-	background-position: 317px center;
-	background-repeat: no-repeat;
+	border: none;
 }
 
 .count-down {
 	width: 27px;
-	margin-left: 20px;
+	margin-left: 19px;
 	background-image: url("../img/Rectangle.svg");
 	background-position: 16px 18px;
 	background-repeat: no-repeat;
@@ -877,14 +887,14 @@ input[type="checkbox"] {
  }
 
  input[type="checkbox"]+label {
-  	background: url("../img/checkbox-off.png") no-repeat;
+  	background: url("../img/checkbox-off.svg") no-repeat;
  	cursor: pointer;
  	margin: 0;
  	height: 23px;
  }
 
 input[type="checkbox"]:checked+label {
-	background: url("../img/checkbox-on.png") no-repeat;
+	background: url("../img/checkbox-on.svg") no-repeat;
 	height: 23px;
 }
 
