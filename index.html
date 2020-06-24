@@ -106,33 +106,33 @@
       	</p>    	
    </div>
   </footer>
- </body>
-</html>
-
-<!--Модальное окно-->
-
-<section class="modal">
+  
+ <!--Модальное окно-->
+<section class="modal modal-show">
     <form action="https://echo.htmlacademy.ru" method="post">
-        <div class="date_form">
+            <div class="date_form_arr">
             <label for="date_of_arrival">Дата заезда:</label>
             <input class="calendar-icon" id="date_of_arrival" type="text" name="date_of_arrival" placeholder="24 апреля 2017">
             <button class="button calendar"></button>
         </div>
-        <div class="date_form">
+        <div class="date_form_dep">
             <label for="date_of_departure">Дата выезда:</label>
             <input class="calendar-icon" id="date_of_departure" type="text" name="date_of_departure" placeholder="4 июля 2017">
             <button class="button calendar"></button>
         </div>
         <div class="amount_form">
-            <label for="amount-number">Взрослые:</label>
-            <button class="button count-down"></button>
-            <input class="amount-icon" type="number" name="amount" id="amount-number" min="1" placeholder="2">
-            <button class="button count-up"></button>
-            <label for="amount-number-kids">Дети:</label>
-         	<button class="button count-down"></button>
+        	     <label for="amount-number">Взрослые:</label>
+                 <button class="button count-down"></button>
+            	<input class="amount-icon" type="number" name="amount" id="amount-number" min="1" placeholder="2">
+            	<button class="button count-up"></button>
+        	    <label for="amount-number-kids">Дети:</label>
+                <button class="button count-down"></button>
            	<input class="amount-icon" type="number" name="amount" id="amount-number-kids" min="0" placeholder="0">
             <button class="button count-up"></button>
-        </div>
+         </div>
         <button class="button button-search" type="submit" value="Найти">Найти</button>
-    </form>
+       </form>
 </section>
+<script src="js/modal.js"></script>
+</body>
+</html>
