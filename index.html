@@ -84,7 +84,7 @@
             <h2 class="question-title">Заинтересовались?</h2>
             <p class="question-descr">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           </section>
-                    <button class="button button-search-of-hotel" type="button">Поиск гостиницы в Седоне</button>
+                    <button class="button button-search-of-hotel" type="button" value="Поиск гостиницы">Поиск гостиницы в Седоне</button>
      </main> 
      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.13567326336!2d-111.8302438438718!3d34.854443790907496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1593115046948!5m2!1sru!2sru" width="1200" height="473" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>       
   <footer class="page-footer main-footer">
@@ -120,27 +120,42 @@
  <!--Модальное окно-->
 <section class="modal modal-show">
     <form action="https://echo.htmlacademy.ru" method="post">
-            <div class="date_form_arr">
-            <label for="date_of_arrival">Дата заезда:</label>
-            <input class="calendar-icon" id="date_of_arrival" type="text" name="date_of_arrival" placeholder="24 апреля 2017" required>
-            <button class="button calendar"></button>
+    	<div class="date_form">
+        	<div class="dates">
+        		<label for="date_of_arrival">Дата заезда:</label>
+        	</div>
+        	<div class="input_date">
+           		 <input class="calendar-icon" id="date_of_arrival" type="text" name="date_of_arrival" placeholder="24 апреля 2017" required>
+            	<button class="button calendar" type="button" value="Календарь"></button>
+        	</div>
         </div>
-        <div class="date_form_dep">
-            <label for="date_of_departure">Дата выезда:</label>
-            <input class="calendar-icon" id="date_of_departure" type="text" name="date_of_departure" placeholder="4 июля 2017" required>
-            <button class="button calendar"></button>
-        </div>
+        <div class="date_form">
+        	<div class="dates">
+            	<label for="date_of_departure">Дата выезда:</label>
+        	</div>
+        	<div class="input_date">
+            	<input class="calendar-icon" id="date_of_departure" type="text" name="date_of_departure" placeholder="4 июля 2017" required>
+            	<button class="button calendar" type="button" value="Календарь"></button>
+        	</div>
+    	</div>
         <div class="amount_form">
-        	     <label for="amount-number">Взрослые:</label>
-                 <button class="button count-down"></button>
-            	<input class="amount-icon" type="number" name="amount" id="amount-number" min="1" placeholder="2" required>
-            	<button class="button count-up"></button>
-        	    <label for="amount-number-kids">Дети:</label>
-                <button class="button count-down"></button>
-           	<input class="amount-icon" type="number" name="amount" id="amount-number-kids" min="0" placeholder="0" required>
-            <button class="button count-up"></button>
-         </div>
-        <button class="button button-search" type="submit" value="Найти">Найти</button>
+        	<div class="adults">
+        		<label for="amount-number">Взрослые:</label>
+        	</div>
+        	<div class="input_amount">
+            	<button class="button count-down" type="button" value="Убавить"></button>
+           		<input class="amount-icon" type="number" name="amount" id="amount-number" min="1" placeholder="2" required>
+            	<button class="button count-up" type="button" value="Добавить"></button>
+        	</div>
+            <div class="kids">
+        		<label for="amount-number-kids">Дети:</label>
+        	</div>
+            <div class="input_amount">
+            	<button class="button count-down" type="button" value="Убавить"></button>
+           		<input class="amount-icon" type="number" name="amount" id="amount-number-kids" min="0" placeholder="0" required>
+        	</div>
+        </div>
+        <button class="butinput_amountton button-search" type="submit" value="Найти">Найти</button>
        </form>
 </section>
 <script src="js/modal.js"></script>
