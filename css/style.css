@@ -412,8 +412,12 @@ a:active{
 
 /* Modal */
 
+.modal-form {
+	position: relative;
+}
+
 .modal {
-	top: 2169px;
+	top: 115px;
 	left: 316px;
 	display: flex;
 	align-items:flex-start;
@@ -423,6 +427,7 @@ a:active{
 	background-color: var(--basic-white);
 	animation-name: bounce;
 	animation-duration: 0.6s;
+	position: absolute;
 	
 }
 
@@ -436,7 +441,7 @@ a:active{
 }*/
 
 .modal-show {
-	top: 2169px;
+	top: 115px;
 	left: 316px;
 	display: flex;
 	align-items: flex-start;
@@ -526,10 +531,16 @@ a:active{
 	align-self: center;
 }
 
+.input-kids {
+	display: flex;
+	justify-content: flex-start;
+}
+
 .modal input[type="text"] {
-	width: 305px;
+	width: 295px;
 	height: 34px;
 	padding: 0;
+	padding-left: 10px;
    	background-color: #F2F2F2;
    	font-weight: 700;
 	font-size: 14px;
@@ -547,8 +558,9 @@ a:active{
 
 .modal input[type="text"]:focus {
 	background-color: #FFFFFF;
-	width: 305px;
+	width: 295px;
 	height: 34px;
+	padding-left: 10px;
 	border: 2px solid #E5E5E5;
 	outline: 0;
     outline-offset: 0;
@@ -586,6 +598,10 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
 .calendar {
 	width: 37px;
 	height: 38px;
@@ -604,7 +620,7 @@ input::-webkit-inner-spin-button {
 	background-image: url("../img/calendar-1.svg");
 	background-position: 5px 6px;
 	background-repeat: no-repeat;
-	border: none;
+	border: 2px solid #F2F2F2;
 	outline: 0;
     outline-offset: 0;
 }
@@ -613,8 +629,9 @@ input::-webkit-inner-spin-button {
 	width: 37px;
 	height: 38px;
 	background-image: url("../img/calendar2.svg");
-	background-position: 5px 7px;
+	background-position: 5px 6px;
 	background-repeat: no-repeat;
+	border: 2px solid #F2F2F2;
 	outline: 0;
     outline-offset: 0;
 }
@@ -707,8 +724,10 @@ a {
 }
 
 .checkbox-filter {
+	height: 193px;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-around;
 	align-items: baseline;
 	text-align: left;
 	padding-left: 72px;
@@ -743,7 +762,7 @@ a {
 }
 
 .filter-item legend {
-	margin-bottom: 12px;
+	margin-bottom: 11px;
 	font-size: 16px;
 	line-height: 21px;
 	font-weight: 700;
@@ -753,7 +772,7 @@ a {
 .range-controls {
 	height: 3px;
 	position: relative;
-	margin-bottom: 33px;
+	margin-bottom: 31px;
 	margin-top: 19px;
 }
 
@@ -775,7 +794,21 @@ a {
 	width: 4px;
 	height: 4px;
 	padding: 0;
-	border: 8px solid var(--basic-white);
+	border: 7px solid var(--basic-white);
+	background-color: #ABABAB;
+	border-radius: 50%;
+	box-shadow: 0 2px 1px 0  #ABABAB;
+	cursor: pointer;
+}
+
+.range-controls .toggle-min:active {
+	position: absolute;
+	top: -9px;
+	left: 0;
+	width: 5px;
+	height: 5px;
+	padding: 0;
+	border: 9px solid var(--basic-white);
 	background-color: #ABABAB;
 	border-radius: 50%;
 	box-shadow: 0 2px 1px 0  #ABABAB;
@@ -786,11 +819,22 @@ a {
 	left: 253px;
 }
 
+.range-controls .toggle-max:active {
+	width: 5px;
+	height: 5px;
+	padding: 0;
+	border: 9px solid var(--basic-white);
+	background-color: #ABABAB;
+	border-radius: 50%;
+	box-shadow: 0 2px 1px 0  #ABABAB;
+	cursor: pointer;
+}
+
 .price-controls label {
 	font-size: 14px;
 	padding-top: 4px;
 	padding-bottom: 7px;
-	padding-left: 43px;
+	padding-left: 53px;
 	line-height: 21px;
 	color: var(--basic-white);
 	text-align: center;
@@ -809,19 +853,19 @@ a {
 }
 
 .price-controls input {
-	width: 65px;
-	text-align: center;
+	width: 64px;
+	text-align: left;
 	color: var(--basic-white);
 	background: none;
 	border: none;
-	text-align: center;
 	font-size: inherit;
 	line-height: inherit;
+	outline: 0;
+    outline-offset: 0;
 }
 
 .results {
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: flex-start;
 	width: 1200px;
 	margin-top: 7px;
@@ -840,7 +884,7 @@ a {
 .results p:nth-child(2) {
 	font-size: 12px;
 	line-height: 18px;
-	padding-top: 29px;
+	padding-top: 28px;
 	margin-top: 0;
 	margin-left: 46px;
 }
@@ -928,15 +972,15 @@ a {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 7px;
-    margin-bottom: 20px;
-}
+ }
 
 .hotel-estim span:nth-child(2) {
-	margin-right: 195px;
+	margin-right: 199px;
 }
 
 .hotel-button {
-	margin-bottom: 24px;
+	margin-bottom: 26px;
+	display: flex;
 }
 
 .estim {
@@ -1014,6 +1058,11 @@ input[type="checkbox"]:checked:disabled+label {
  	font-size: 0;
 }
 
+.card-title p {
+	display: flex;
+	justify-content: space-between;
+}
+
 .card-title {
  	font-size: 21px;
  	line-height: 26px;
@@ -1055,6 +1104,7 @@ input[type="checkbox"]:checked:disabled+label {
 	margin-left: 86px;
 	background: none;
 	border: 2px solid #FFFFFF;
+	border-radius: 2px;
 }
 
 .button-show:hover {
@@ -1140,52 +1190,56 @@ fieldset {
 
 .button-more {
 	font-size: 14px;
+	font-weight: bold;
 	width: 110px;
 	height: 27px;
 	margin-right: 6px;
+	padding-top: 4px;
+	padding-left: 17px;
+	padding-right: 17px;
 	background-color: var(--basic-blue);
-	border: none;
-	outline: 0;
-    outline-offset: 0;
     cursor: pointer;
+}
+
+.button-more a {
+	color: var(--basic-white);
 }
 
 .button-more:hover {
 	background-color: var(--basic-dark-blue);
-	outline: 0;
-    outline-offset: 0;
     cursor: pointer;
 }
 
 .button-more:active {
 	color: #C4C4C4;
 	background-color: var(--basic-extra-blue);
-	outline: 0;
-    outline-offset: 0;
     cursor: pointer;
 }
 
 .button-buy {
+	font-size: 14px;
+	font-weight: bold;
 	width: 142px;
 	height: 27px;
+	padding-top: 4px;
+	padding-left: 17px;
+	padding-right: 17px;
 	background-color: var(--basic-light-gray);
 	border: none;
 	cursor: pointer;
-	outline: 0;
-    outline-offset: 0;
+}
+
+.button-buy a {
+	color: var(--basic-white);
 }
 
 .button-buy:hover {
 	background-color: var(--basic-dark-gray);
-	outline: 0;
-    outline-offset: 0;
     cursor: pointer;
 }
 
 .button-buy:active {
 	background-color: var(--basic-extra-gray);
-	outline: 0;
-    outline-offset: 0;
     cursor: pointer;
 }
 
