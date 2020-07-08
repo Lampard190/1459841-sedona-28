@@ -156,7 +156,7 @@ a:active{
 	background-color: var(--basic-dark-blue);
 	background-image:
 		url('../img/whiteback.png'),
-		url('../img/welcome-back.png');
+		url('../img/welcomeback.png');
 	background-position: center 191%, center 0%;
 	background-repeat: no-repeat;
 }
