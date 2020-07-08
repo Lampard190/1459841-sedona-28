@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link href="normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/minstyle.css" rel="stylesheet">
   </head>
  <body class="page-body inner">
   	<header class="main-header">
@@ -13,10 +13,10 @@
         <img src="img/logo.svg" width="138" height="70" alt="Логотип Седона">
       </a>
         <nav class="main-navigation">
-          <a href="blank.html">ИНФОРМАЦИЯ</a>
-          <a href="blank.html">ФОТО И ВИДЕО</a>
-          <a href="map.html">КАРТА ШТАТА</a>
-          <a href="inner.html">ГОСТИНИЦЫ</a>
+          <a class="active" href="blank.html">Информация</a>
+          <a href="blank.html">Фото и видео</a>
+          <a href="map.html">Карта штата</a>
+          <a href="inner.html">Гостиницы</a>
         </nav>  
   </header>
   <main>
@@ -66,7 +66,7 @@
   	  			<p>Найдено: 3</p>
   				<p>Сортировка:</p>
   				<fieldset class="sorting">
-   		 		<label for="filter-at-price">По цене</label>
+   		 		<label class="active" for="filter-at-price">По цене</label>
   		  		<input  type="radio" name="at-price" id="filter-at-price" value="По цене">
   		  		<label for="filter-by-type">По типу</label>
   		  		<input  type="radio" name="by-type" id="filter-by-type" value="По типу">
@@ -77,13 +77,13 @@
   	   			<legend class="visually-hidden">Сортировка по возрастанию и убыванию</legend>
             <label for="up">По возрастанию</label>
   		  		<input type="radio" name="ascending" id="up" value="По возрастанию">
-            <label for="down">По убыванию</label>
+            <label class="active" for="down">По убыванию</label>
    		  		<input type="radio" name="descending" id="down" value="По убыванию">
    	    	</fieldset>
    			</div>
  	</form>
   		<section class="hotels">
-  			<img class="image-hotel" src="img/Amara.jpg" width="135" height="90" alt="Гостиница Amara Resort&SPA">
+  			<img class="image-hotel" src="img/amara.jpg" width="135" height="90" alt="Гостиница Amara Resort&SPA">
   	  		<div class="hotel-estim">
   	  			<h3 class="card-title"><a href="#">Amara Resort & SPA</a></h3>
   				  <p><span>Гостиница</span> <span>от 4000 р.</span></p>
@@ -93,12 +93,12 @@
           				</div>
   			</div>
   			<p class="estim">
-  	    		<img src="img/4stars.svg" width="91" height="17" alt="4 звезды">
+  	    		<img src="img/fourstars.svg" width="91" height="17" alt="4 звезды">
             <span>Рейтинг:8,5</span>
   			</p>
   	</section>
   	<section class="hotels">
-  	    	<img class="image-hotel" src="img/desert quail.jpg" width="135" height="90" alt="Мотель Desert Quail Inn">
+  	    	<img class="image-hotel" src="img/desertquail.jpg" width="135" height="90" alt="Мотель Desert Quail Inn">
   	    	<div class="hotel-estim">
   	    		<h3 class="card-title"><a href="#">Desert Quail Inn</a></h3>
   	    		<p><span>Мотель</span> <span>от 3000 р.</span></p>
@@ -108,12 +108,12 @@
            </div>
   		   	 </div>
   		    <p class="estim">
-  		  		<img src="img/3stars.svg" width="66" height="17" alt="3 звезды">
+  		  		<img src="img/threestars.svg" width="66" height="17" alt="3 звезды">
             <span>Рейтинг:8,9</span>
   		  	</p>
     </section>
   		<section class="hotels">
-  			<img class="image-hotel" src="img/Villas at poco diablo.jpg" width="135" height="90" alt="Апартаменты Villas at Poco Diablo">
+  			<img class="image-hotel" src="img/villas.jpg" width="135" height="90" alt="Апартаменты Villas at Poco Diablo">
   	     	<div class="hotel-estim">
   	     		<h3 class="card-title"><a href="#">Villas at Poco Diablo</a></h3>
   	    		<p><span>Апартаменты</span> <span>от 2000 р.</span></p>
@@ -123,7 +123,7 @@
           </div>
   		    </div>
   		    <p class="estim">
-  		    	<img src="img/2stars.svg" width="42" height="17" alt="2 звезды">
+  		    	<img src="img/twostars.svg" width="42" height="17" alt="2 звезды">
             <span>Рейтинг:9,2</span>
   			</p>
   		</section>

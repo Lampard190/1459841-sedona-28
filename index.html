@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link href="normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/minstyle.css" rel="stylesheet">
   </head>
   <body class="page-body">
   <header class="main-header">
@@ -13,10 +13,10 @@
     		<img src="img/logo.svg" width="138" height="70" alt="Логотип Седона">
   		</a>
         <nav class="main-navigation">
-          	<a href="blank.html">ИНФОРМАЦИЯ</a>
-  		 	<a href="blank.html">ФОТО И ВИДЕО</a>
-  		 	<a href="map.html">КАРТА ШТАТА</a>
-  		  	<a href="inner.html">ГОСТИНИЦЫ</a>
+          	<a class="active" href="blank.html">Информация</a>
+  		 	<a href="blank.html">Фото и видео</a>
+  		 	<a href="map.html">Карта штата</a>
+  		  	<a href="inner.html">Гостиницы</a>
   		</nav>	
   </header>
   <main class="page-main container">
@@ -29,21 +29,21 @@
             		<span>&mdash;&numero; 1 &mdash;</span>
            			<p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
         		</div>
-            	<img src="img/Настоящий городок.jpg" width="800" height="256" alt="Настоящий городок">
+            	<img src="img/realsity.jpg" width="800" height="256" alt="Настоящий городок">
             </div>
               <ul>
               <li class="reason-item">
-                <img src="img/жилье.svg" width="75" height="72" alt="Жилье">
+                <img src="img/hausing.svg" width="75" height="72" alt="Жилье">
                 <p><b>Жильё</b></p>
                 <p class="reason-item-descr">Рекомендуем пожить в настоящем<br>мотеле, всё как в кино!</p>
                </li>
                <li class="reason-item">
-                <img src="img/Еда.svg" width="75" height="70" alt="Еда">
+                <img src="img/food.svg" width="75" height="70" alt="Еда">
                 <p><b>Еда</b></p>
                 <p class="reason-item-descr">Всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!</p>
                </li>
                <li class="reason-item">
-                 <img src="img/Сувениры.svg" width="64" height="77" alt="Сувениры">
+                 <img src="img/souvenirs.svg" width="64" height="77" alt="Сувениры">
                  <p><b>Сувениры</b></p>
                  <p class="reason-item-descr">Не только китайского, но и местного,<br>производства</p>
                </li> 
@@ -51,7 +51,7 @@
         </section>
         <section class="real-town">
         	<div class="blue-first-reason">
-           		<img src="img/мост дьявола.jpg" width="800" height="256" alt="Настоящий городок">
+           		<img src="img/bridge.jpg" width="800" height="256" alt="Настоящий городок">
            		<div class="first-reason">
             		<h2>Там есть<br>мост дьявола</h2>
             		<span>&mdash;&numero; 2 &mdash;</span>
@@ -90,7 +90,7 @@
         	</div>
         	<div class="input_date">
            		 <input class="calendar-icon" id="date_of_arrival" type="text" name="date_of_arrival" placeholder="24 апреля 2017" required>
-            	<button class="button calendar" type="button">Календарь</button>
+            	<button class="button calendar" type="button"><span class="visually-hidden">Календарь</span></button>
         	</div>
         </div>
         <div class="date_form">
@@ -99,7 +99,7 @@
         	</div>
         	<div class="input_date">
             	<input class="calendar-icon" id="date_of_departure" type="text" name="date_of_departure" placeholder="4 июля 2017" required>
-            	<button class="button calendar" type="button">Календарь</button>
+            	<button class="button calendar" type="button"><span class="visually-hidden">Календарь</span></button>
         	</div>
     	</div>
         <div class="amount_form">
@@ -107,17 +107,17 @@
         		<label for="amount-number">Взрослые:</label>
         	</div>
              <div class="input_amount">
-            	<button class="button count-down" type="button">Убавить</button>
+            	<button class="button count-down" type="button"><span class="visually-hidden">Убавить</span></button>
            		<input class="amount-icon" type="number" name="amount" id="amount-number" min="1" placeholder="2" required>
-            	<button class="button count-up" type="button">Добавить</button>
+            	<button class="button count-up" type="button"><span class="visually-hidden">Добавить</span></button>
         	</div>
             <div class="kids">
         		<label for="amount-number-kids">Дети:</label>
         	</div>
             <div class="input_amount">
-            	<button class="button count-down" type="button">Убавить</button>
+            	<button class="button count-down" type="button"><span class="visually-hidden">Убавить</span></button>
            		<input class="amount-icon" type="number" name="amount" id="amount-number-kids" min="0" placeholder="0" required>
-           		<button class="button count-up" type="button">Добавить</button>
+           		<button class="button count-up" type="button"><span class="visually-hidden">Добавить</span></button>
         	</div>
            </div>
         <button class="button button-search" type="submit" value="Найти">Найти</button>
@@ -125,7 +125,7 @@
 </section>
 </div>
      </main> 
-     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.13567326336!2d-111.8302438438718!3d34.854443790907496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1593115046948!5m2!1sru!2sru" width="1200" height="473" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>       
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.13567326336!2d-111.8302438438718!3d34.854443790907496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1593115046948!5m2!1sru!2sru" width="1200" height="473" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>     
   <footer class="page-footer main-footer">
    <div class="container">
 	 <p class="footer-contacts">#visitsedona<br> <a href="tel:+74956660266">тел: +7 (495) 666-02-66</a></p>
@@ -156,6 +156,6 @@
       	</p>    	
    </div>
   </footer>
-<script src="js/modal.js"></script>
+<script src="js/minmodal.js"></script>
 </body>
 </html>
