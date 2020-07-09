@@ -671,7 +671,7 @@ input[type="number"] {
 	width: 38px;
 	height: 38px;
 	padding: 0;
-	background-image: url("../img/rectangle.svg");
+	background-image: url("../img/rectan.svg");
 	background-position: 13px 18px;
 	background-repeat: no-repeat;
 	border: none;
@@ -704,7 +704,7 @@ input[type="number"] {
 	width: 38px;
 	height: 38px;
 	padding: 0;
-	background-image: url("../img/union.svg");
+	background-image: url("../img/unio.svg");
 	background-position: 14px 14px;
 	background-repeat: no-repeat;
 	border: none;
